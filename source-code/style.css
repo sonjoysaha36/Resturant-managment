@@ -1,0 +1,134 @@
+ body{
+    font-family: latha;
+    color: white;
+    background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)) 
+    ,url(../image/foodd.jpg)no-repeat;
+    background-size: cover;
+}
+.box{ width: 900px;
+float:right ;
+border: 1px solid black;}
+
+.box ul li{
+    width: 120px;
+    float: left;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.box ul li a{text-decoration: none;
+color:darkgray ;}
+
+.box ul li:hover{
+    background-color:green ;
+    cursor: pointer;
+}
+.box ul li a:hover{color: white;}
+ .flx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}  
+
+ .wd{
+    width: 300px;
+    height: 530px;
+    background-color: black;
+    opacity: 0.9;
+    padding: 55px;
+}
+.wd h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100px;
+}
+.wd h4{
+    text-align: justify;
+    color: darkgray;
+    font-weight: normal;
+}
+.wd h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 40px auto;
+}
+.opt form , input[type="button"]{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: -14px auto;
+    text-align: center;
+} 
+
+.flx .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content p,
+    
+ .content h3{
+    color: springgreen;
+    text-transform: uppercase;
+}
+ .content p{
+      font-family: 'Pattaya', sans-serif;
+
+    font-size: 60px;
+    letter-spacing: 6px;
+}
+.content h3{
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+.scroll_down{
+    height: 50px;
+    width: 30px;
+    border: 2px solid white;
+    position: absolute;
+    left: 50%;
+    bottom: 16%;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.scroll_down::before,
+.scroll_down::after{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid white ;
+    height: 10px;
+    width:10px ;
+    transform: translate(-50%,-50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scrolldown 1s ease-in-out infinite;
+
+
+}
+.scroll_down::after{
+    top: 30%;
+
+}
+
+@keyframes scrolldown{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1 ;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+        top:80%;
+    }
+}
